@@ -1,0 +1,24 @@
+{
+  "name": "casino-integration",
+  "version": "1.0.0",
+  "description": "MatGaming Casino API Integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop casino-api",
+    "pm2:restart": "pm2 restart casino-api",
+    "pm2:logs": "pm2 logs casino-api",
+    "pm2:status": "pm2 status"
+  },
+  "keywords": ["casino", "api", "matgaming", "integration"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "fastify": "^5.6.1",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7"
+  }
+}
